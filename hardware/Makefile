@@ -2,7 +2,7 @@
 # 10-08-2013 E. Brombaugh
 
 # base name
-DESIGN = adsb_cape
+DESIGN = cuttle_lure
 
 # Executables
 GSCH = gschem
@@ -13,7 +13,7 @@ CVT = convert
 
 # Targets
 clean:
-	-rm -f *~ *- *.new.pcb *.cmd *.net  *.jpg bom.txt *.ps *.zip *.bak
+	-rm -f *~ *- *.new.pcb *.cmd *.net  bom.txt *.ps *.zip *.bak
 
 bom:
 	$(GNET) -g bom $(DESIGN)_pg?.sch -o bom.txt

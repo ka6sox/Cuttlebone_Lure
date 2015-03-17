@@ -5,11 +5,11 @@ FileVersion[20091103]
 
 PCB["" 3900.00mil 2900.00mil]
 
-Grid[500.000000 0.0000 0.0000 0]
+Grid[500.000000 0.0000 0.0000 1]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[10.00mil 10.00mil 10.00mil 10.00mil 13.00mil 7.00mil]
-Flags("nameonpcb,uniquename,clearnew")
+Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -787,9 +787,6 @@ Symbol['~' 12.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
 Attribute("PCB::grid::size" "5.00mil")
-Via[3270.00mil 1460.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
-Via[3170.00mil 1460.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
-Via[500.00mil 2240.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[650.00mil 1800.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[1370.00mil 1800.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[700.00mil 1735.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
@@ -798,7 +795,6 @@ Via[750.00mil 1130.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1870.00mil 1885.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[90.00mil 730.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[2070.00mil 830.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
-Via[1070.00mil 1460.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[390.00mil 2845.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1350.00mil 2845.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1400.00mil 2455.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
@@ -834,7 +830,6 @@ Via[850.00mil 2385.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1620.00mil 2560.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1550.00mil 2560.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1320.00mil 290.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
-Via[1070.00mil 2235.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[320.00mil 2420.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[900.00mil 2420.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1720.00mil 2385.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
@@ -849,6 +844,7 @@ Via[1770.00mil 290.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1320.00mil 2220.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1450.00mil 2220.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[3070.00mil 2210.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
+Via[1270.00mil 1800.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 
 Element["" "mount_hole_125" "MH3" "unknown" 3750.00mil 150.00mil -50.00mil -25.00mil 0 100 ""]
 (
@@ -892,8 +888,8 @@ Element["" "mount_hole_125" "MH4" "unknown" 3750.00mil 2750.00mil -50.00mil -30.
 
 Element["" "HEADER26_2" "P1" "unknown" 500.00mil 2800.00mil -50.00mil -210.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
-	Pin[0.0000 -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2,thermal(1X)"]
+	Pin[0.0000 -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2,thermal(1X)"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[100.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "5" "5" "edge2"]
@@ -929,8 +925,8 @@ Element["" "HEADER26_2" "P1" "unknown" 500.00mil 2800.00mil -50.00mil -210.00mil
 
 Element["" "HEADER46_2" "J103" "unknown" 1070.00mil 2115.00mil 1350.00mil -225.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
-	Pin[0.0000 -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2,thermal(1X)"]
+	Pin[0.0000 -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2,thermal(1X)"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[100.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "5" "5" "edge2"]
@@ -971,10 +967,10 @@ Element["" "HEADER46_2" "J103" "unknown" 1070.00mil 2115.00mil 1350.00mil -225.0
 	Pin[1900.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "40" "40" "edge2"]
 	Pin[2000.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "23" "41" "edge2"]
 	Pin[2000.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "42" "42" "edge2"]
-	Pin[2100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "43" "43" "edge2"]
-	Pin[2100.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "44" "44" "edge2"]
-	Pin[2200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "45" "45" "edge2"]
-	Pin[2200.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "46" "46" "edge2"]
+	Pin[2100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "43" "43" "edge2,thermal(1X)"]
+	Pin[2100.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "44" "44" "edge2,thermal(0X,1X)"]
+	Pin[2200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "45" "45" "edge2,thermal(1X)"]
+	Pin[2200.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "46" "46" "edge2,thermal(1X)"]
 	ElementLine [-50.00mil 50.00mil 2250.00mil 50.00mil 10.00mil]
 	ElementLine [2250.00mil -150.00mil 2250.00mil 50.00mil 10.00mil]
 	ElementLine [-50.00mil -150.00mil 2250.00mil -150.00mil 10.00mil]
@@ -986,8 +982,8 @@ Element["" "HEADER46_2" "J103" "unknown" 1070.00mil 2115.00mil 1350.00mil -225.0
 
 Element["" "HEADER46_2" "J102" "unknown" 1070.00mil 215.00mil 1350.00mil 55.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
-	Pin[0.0000 -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2,thermal(0X,1X)"]
+	Pin[0.0000 -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2,thermal(1X)"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[100.00mil -100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "5" "5" "edge2"]
@@ -1139,12 +1135,10 @@ Element["" "JUMPER3" "JP3" "unknown" 2865.00mil 2630.00mil -170.00mil -90.00mil 
 Layer(1 "component")
 (
 	Line[1065.00mil 2120.00mil 1070.00mil 2115.00mil 25.00mil 20.00mil "clearline"]
-	Line[500.00mil 2240.00mil 1070.00mil 2240.00mil 25.00mil 20.00mil "clearline"]
 	Line[650.00mil 1800.00mil 1365.00mil 1800.00mil 25.00mil 20.00mil "clearline"]
 	Line[700.00mil 1735.00mil 2175.00mil 1735.00mil 10.00mil 20.00mil "clearline"]
 	Line[170.00mil 1130.00mil 750.00mil 1130.00mil 10.00mil 20.00mil "clearline"]
 	Line[4.4634mm 730.00mil 2.3044mm 730.00mil 10.00mil 20.00mil "clearline"]
-	Line[3270.00mil 1460.00mil 1070.00mil 1460.00mil 25.00mil 20.00mil "clearline"]
 	Line[390.00mil 2845.00mil 1345.00mil 2845.00mil 10.00mil 20.00mil "clearline"]
 	Line[1345.00mil 2845.00mil 1350.00mil 2850.00mil 10.00mil 20.00mil "clearline"]
 	Line[2420.00mil 2455.00mil 1400.00mil 2455.00mil 10.00mil 20.00mil "clearline"]
@@ -1182,14 +1176,11 @@ Layer(1 "component")
 	Line[2915.00mil 2210.00mil 3070.00mil 2210.00mil 10.00mil 20.00mil "clearline"]
 	Line[2865.00mil 2240.00mil 2895.00mil 2210.00mil 10.00mil 20.00mil "clearline"]
 	Line[2895.00mil 2210.00mil 2920.00mil 2210.00mil 10.00mil 20.00mil "clearline"]
-	Line[1735.00mil 2845.00mil 2850.00mil 2845.00mil 10.00mil 20.00mil "clearline"]
+	Line[1650.00mil 2845.00mil 2850.00mil 2845.00mil 10.00mil 20.00mil "clearline"]
 	Line[2845.00mil 2845.00mil 2865.00mil 2825.00mil 10.00mil 20.00mil "clearline"]
 )
 Layer(2 "solder")
 (
-	Line[3270.00mil 2110.00mil 3270.00mil 1460.00mil 25.00mil 20.00mil "clearline"]
-	Line[3170.00mil 2120.00mil 3170.00mil 1460.00mil 25.00mil 20.00mil "clearline"]
-	Line[500.00mil 2790.00mil 500.00mil 2240.00mil 25.00mil 20.00mil "clearline"]
 	Line[650.00mil 2610.00mil 650.00mil 1805.00mil 25.00mil 20.00mil "clearline"]
 	Line[1370.00mil 2115.00mil 1370.00mil 1800.00mil 25.00mil 20.00mil "clearline"]
 	Line[2170.00mil 2015.00mil 2170.00mil 1735.00mil 10.00mil 20.00mil "clearline"]
@@ -1262,7 +1253,6 @@ Layer(2 "solder")
 	Line[1320.00mil 2220.00mil 1320.00mil 290.00mil 10.00mil 20.00mil "clearline"]
 	Line[600.00mil 2700.00mil 565.00mil 2665.00mil 25.00mil 20.00mil "clearline"]
 	Line[565.00mil 2305.00mil 565.00mil 2665.00mil 25.00mil 20.00mil "clearline"]
-	Line[1070.00mil 145.00mil 1070.00mil 2240.00mil 25.00mil 20.00mil "clearline"]
 	Line[900.00mil 2705.00mil 900.00mil 2425.00mil 10.00mil 20.00mil "clearline"]
 	Line[1720.00mil 2385.00mil 1720.00mil 1885.00mil 10.00mil 20.00mil "clearline"]
 	Line[90.00mil 730.00mil 90.00mil 2350.00mil 10.00mil 20.00mil "clearline"]
@@ -1270,6 +1260,11 @@ Layer(2 "solder")
 	Line[1770.00mil 290.00mil 1770.00mil 215.00mil 10.00mil 20.00mil "clearline"]
 	Line[1820.00mil 355.00mil 1820.00mil 240.00mil 10.00mil 20.00mil "clearline"]
 	Line[77.9582mm 53.5969mm 77.9582mm 56.1369mm 10.00mil 20.00mil "clearline"]
+	Line[1270.00mil 1800.00mil 1270.00mil 2115.00mil 25.00mil 20.00mil "clearline"]
+	Polygon("clearpoly")
+	(
+		[20.00mil 25.00mil] [3880.00mil 25.00mil] [3880.00mil 2880.00mil] [20.00mil 2880.00mil] 
+	)
 )
 Layer(3 "outline")
 (
@@ -1302,7 +1297,7 @@ Layer(5 "silk")
 	Text[240.00mil 895.00mil 0 100 "GPIO_UART2_RXD" "clearline"]
 	Text[2935.00mil 2220.00mil 0 100 "P9-41" "clearline"]
 	Text[2935.00mil 2325.00mil 0 100 "GPIO_UART1_RTS" "clearline"]
-	Text[245.00mil 1095.00mil 0 100 "GPIO_SPI_MOSI" "clearline"]
+	Text[245.00mil 1095.00mil 0 100 "GPIO_SPI_MISO" "clearline"]
 	Text[245.00mil 1295.00mil 0 100 "GPIO_UART2_TXD" "clearline"]
 	Text[2935.00mil 2600.00mil 0 100 "GPIO_I2S_FRM" "clearline"]
 	Text[2935.00mil 2795.00mil 0 100 "GPIO_PWM1" "clearline"]

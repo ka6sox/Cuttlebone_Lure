@@ -1305,7 +1305,7 @@ Layer(5 "silk")
 	Text[240.00mil 1195.00mil 0 100 "P9-21" "clearline"]
 	Text[245.00mil 800.00mil 0 100 "P9-22" "clearline"]
 	Text[2935.00mil 2425.00mil 0 100 "P9-42" "clearline"]
-	Text[3635.00mil 735.00mil 1 100 "v0.5" "clearline"]
+	Text[3635.00mil 735.00mil 1 100 "v0.7" "clearline"]
 )
 NetList()
 (

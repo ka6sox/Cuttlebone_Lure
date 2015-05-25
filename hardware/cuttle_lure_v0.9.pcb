@@ -1337,6 +1337,8 @@ NetList()
 	)
 	Net("+5V" "(unknown)")
 	(
+		Connect("J103-5")
+		Connect("J103-6")
 		Connect("J103-7")
 		Connect("J103-8")
 		Connect("P1-3")
@@ -1424,6 +1426,7 @@ NetList()
 	)
 	Net("GPIO_SPI_CS#" "(unknown)")
 	(
+		Connect("J103-17")
 		Connect("P1-5")
 	)
 	Net("GPIO_SPI_MISO" "(unknown)")
@@ -1465,10 +1468,6 @@ NetList()
 	(
 		Connect("JP1-3")
 		Connect("P1-17")
-	)
-	Net("SPI0_CS0" "(unknown)")
-	(
-		Connect("J103-17")
 	)
 	Net("TO_P9_21" "(unknown)")
 	(
